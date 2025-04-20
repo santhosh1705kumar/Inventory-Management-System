@@ -1,0 +1,29 @@
+{
+  "name": "inventory-management-system",
+  "private": true,
+  "scripts": {
+    "ng": "npx ng",
+    "start": "npx ng serve",
+    "build": "npx ng build"
+  },
+  "dependencies": {
+    "@angular/animations": "^19.0.6",
+    "@angular/common": "^19.0.6",
+    "@angular/compiler": "^19.0.6",
+    "@angular/core": "^19.0.6",
+    "@angular/forms": "^19.0.6",
+    "@angular/material": "^19.0.6",
+    "@angular/platform-browser": "^19.0.6",
+    "@angular/platform-browser-dynamic": "^19.0.6",
+    "@angular/router": "^19.0.6",
+    "@angular/cli": "^19.0.6",
+    "rxjs": "^7.8.1",
+    "tslib": "^2.5.0",
+    "zone.js": "~0.15.0"
+  },
+  "devDependencies": {
+    "@angular/build": "^19.0.6",
+    "@angular/compiler-cli": "^19.0.6",
+    "typescript": "^5.6.3"
+  }
+}

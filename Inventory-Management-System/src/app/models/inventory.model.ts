@@ -21,5 +21,5 @@ export enum StockStatus {
 
 export const CATEGORIES = [
 'Clothing', 'Accessories', 'Footwear',
-  'Other'
+'Other'
 ];

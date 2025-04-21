@@ -91,7 +91,7 @@ import { ConfirmDialogComponent } from '../../shared/confirm-dialog/confirm-dial
           <!-- Supplier Column -->
           <ng-container matColumnDef="supplier">
             <th mat-header-cell *matHeaderCellDef mat-sort-header>Supplier</th>
-            <td mat-cell *matCellDef="let item">{{item.supplier_name}}</td>
+            <td mat-cell *matCellDef="let item">{{item.supplier_id}}</td>
           </ng-container>
 
           <!-- Actions Column -->

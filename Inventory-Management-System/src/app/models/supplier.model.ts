@@ -3,5 +3,4 @@ export interface Supplier {
   name: string;
   contact: string;
   created_at?: Date;
-  inventory_count?: number;
 }

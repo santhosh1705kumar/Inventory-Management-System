@@ -53,7 +53,7 @@ import { ConfirmDialogComponent } from '../../shared/confirm-dialog/confirm-dial
         <mat-card>
           <mat-card-content class="text-center">
             <p>No suppliers found. Add some suppliers to get started.</p>
-            <a mat-raised-button color="primary" routerLink="/suppliers/new">Add Supplier</a>
+            <a mat-raised-button color="accent" routerLink="/suppliers/new">Add Supplier</a>
           </mat-card-content>
         </mat-card>
       </div>
@@ -79,10 +79,10 @@ import { ConfirmDialogComponent } from '../../shared/confirm-dialog/confirm-dial
           </ng-container>
 
           <!-- Inventory Count Column -->
-          <ng-container matColumnDef="inventory_count">
+          <!-- <ng-container matColumnDef="inventory_count">
             <th mat-header-cell *matHeaderCellDef mat-sort-header>Inventory Items</th>
             <td mat-cell *matCellDef="let supplier">{{supplier.inventory_count || 0}}</td>
-          </ng-container>
+          </ng-container> -->
 
           <!-- Actions Column -->
           <ng-container matColumnDef="actions">
@@ -130,7 +130,7 @@ import { ConfirmDialogComponent } from '../../shared/confirm-dialog/confirm-dial
 export class SupplierListComponent implements OnInit {
   suppliers: Supplier[] = [];
   paginatedSuppliers: Supplier[] = [];
-  displayedColumns: string[] = ['id', 'name', 'contact', 'inventory_count', 'actions'];
+  displayedColumns: string[] = ['id', 'name', 'contact',  'actions'];
   isLoading = true;
   
   // Pagination
@@ -176,7 +176,7 @@ export class SupplierListComponent implements OnInit {
         case 'id': return this.compare(a.id, b.id, isAsc);
         case 'name': return this.compare(a.name, b.name, isAsc);
         case 'contact': return this.compare(a.contact, b.contact, isAsc);
-        case 'inventory_count': return this.compare(a.inventory_count, b.inventory_count, isAsc);
+        // case 'inventory_count': return this.compare(a.inventory_count, b.inventory_count, isAsc);
         default: return 0;
       }
     });
@@ -203,10 +203,10 @@ export class SupplierListComponent implements OnInit {
   }
 
   openDeleteDialog(supplier: Supplier): void {
-    if (supplier.inventory_count && supplier.inventory_count > 0) {
-      this.notificationService.warning(`Cannot delete supplier "${supplier.name}" because it has ${supplier.inventory_count} inventory items assigned to it.`);
-      return;
-    }
+    // if (supplier.inventory_count && supplier.inventory_count > 0) {
+    //   this.notificationService.warning(`Cannot delete supplier "${supplier.name}" because it has ${supplier.inventory_count} inventory items assigned to it.`);
+    //   return;
+    // }
 
     const dialogRef = this.dialog.open(ConfirmDialogComponent, {
       width: '350px',

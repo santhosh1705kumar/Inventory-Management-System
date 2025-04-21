@@ -58,7 +58,7 @@ import { MatListModule } from '@angular/material/list';
       display: flex;
       flex-direction: column;
       position: absolute;
-      top: 0;
+      top: 10px;
       bottom: 0;
       left: 0;
       right: 0;

@@ -1,58 +1,82 @@
-# Inventory Management System
-## we approach this problem in different angle as we build a Inventory management is shopping templete of stocks and also we build an retrival based AI using GROUNDX that will help to retrive the information from the great books of inventory management namely 
--> Supply Chain Management For Dummies® Published by: John Wiley & Sons, Inc.,
--> INVENTORY MANAGEMENT Published by the Secretary, National Institute of Open Schooling A-24/25,
--> Demand-Driven Inventory Optimization and Replenishment by Robert Davis
--> ESSENTIALS OF INVENTORY MANAGEMENT by max muller
--> LOGISTICS ANDSUPPLY CHAIN MANAGEMENT by MARTIN CHRISTOPHER
-try our AI
+#  Inventory Management System
 
-# Backend
-## we also build our backend using cloud database[MySQL] using clever cloud and deployed that backend using the ZOHO's catalyst engine called Appsail as shown in environement is path URL API which help to retrive the datas from cloud DB and our Angular front end `https://appsail-50025767379.development.catalystappsail.in/api/` 
-which is the API we used in our Inventory management application
-# INVENTORY TABLE OPERATIONS
+We build an advanced inventory and supplier management platform powered by **Angular**, **MySQL**, and **ZOHO Catalyst's Appsail**. We’ve also integrated a **Retrieval-Based AI Agent** using **GROUNDX**, capable of extracting intelligent insights from top inventory management literature.
 
-## Methods                                                      Endpoint                                                          Description
+## Live API Base URL
 
-GET                                `https://appsail-50025767379.development.catalystappsail.in/api/inventory`           Get all inventory items
-POST                               `https://appsail-50025767379.development.catalystappsail.in/api/inventory`           Create a new inventory item
-GET                                `https://appsail-50025767379.development.catalystappsail.in/api/inventory/:id`       Get a specific inventory item
-PUT                                `https://appsail-50025767379.development.catalystappsail.in/api/inventory/:id`      Update inventory item details
-DELETE                            ` https://appsail-50025767379.development.catalystappsail.in/api/inventory/:id`       Delete an inventory item                                                     FOR 
+we deployed the backend in cloud using clever cloud MySQL and Zoho's Catalyst hosting ,It can be fetched using  
+`https://appsail-50025767379.development.catalystappsail.in/api/ `
 
+> You **do not need to run the backend locally** — it's already deployed and ready to use.
 
-# Similarly for Supplier table operation
+---
 
-## Methods                                                         Endpoint                                                          Description                                                                                         
+## 🔧 Backend API Endpoints
 
-GET                               `https://appsail-50025767379.development.catalystappsail.in/api/suppliers`                        Get all suppliers
-POST                              `https://appsail-50025767379.development.catalystappsail.in/api/suppliers`                        Create a new supplier
-GET                               `https://appsail-50025767379.development.catalystappsail.in/api/suppliers/:id`                   Get a specific supplier
-PUT                               `https://appsail-50025767379.development.catalystappsail.in/api/suppliers/:id`                    Update supplier details
-DELETE                            `https://appsail-50025767379.development.catalystappsail.in/api/suppliers/:id`                    Delete a supplier
+### Inventory Operations
 
+| Method | Endpoint                                             | Description                    |
+|--------|------------------------------------------------------|--------------------------------|
+| GET    | `/inventory`                                         | Get all inventory items        |
+| POST   | `/inventory`                                         | Create a new inventory item    |
+| GET    | `/inventory/:id`                                     | Get a specific inventory item  |
+| PUT    | `/inventory/:id`                                     | Update inventory item details  |
+| DELETE | `/inventory/:id`                                     | Delete an inventory item       |
 
-## we designed the cloud database MySQL as
-TWO Tables namely
-->Suppliers table, which contains name of the supplier and contact details
-->Inventory table, which contains the supplier id , name of the inventory and catagory
+### Supplier Operations
 
-## Backend Deployment
-Appsail is zoho's hosting tools used to deploy both our backend and Retrival Agent AI
+| Method | Endpoint                                             | Description                    |
+|--------|------------------------------------------------------|--------------------------------|
+| GET    | `/suppliers`                                         | Get all suppliers              |
+| POST   | `/suppliers`                                         | Create a new supplier          |
+| GET    | `/suppliers/:id`                                     | Get a specific supplier        |
+| PUT    | `/suppliers/:id`                                     | Update supplier details        |
+| DELETE | `/suppliers/:id`                                     | Delete a supplier              |
 
-# Note
-Its is not Mandatory to run our backend because we hosted the backend it can fetched using the routes As Mentioned above
+---
 
+## Retrieval AI Guide
 
-# FrontEnd
--> Angular
--> Angular Material for UI 
-
-# How to Run the Application
-First run `cd Inventory-Management-System` and then start run the cmd `npm install`
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Our AI agent is capable of fetching answers from well-known inventory and supply chain management books.
+-------------------------------------------------------------------------------------------------------------
+|  Book Title                                                 |          Author and Publisher               |  
+|-------------------------------------------------------------|---------------------------------------------|
+| **Supply Chain Management For Dummies**                     | John Wiley & Sons, Inc.                     | 
+| **Inventory Management**                                    | National Institute of Open Schooling        | 
+| **Demand-Driven Inventory Optimization and Replenishment**  | Robert Davis                                | 
+| **Essentials of Inventory Management**                      | Max Muller                                  | 
+| **Logistics and Supply Chain Management**                   | Martin Christopher                          | 
+-------------------------------------------------------------------------------------------------------------
 
 
+> The AI agent is integrated into the backend and can be accessed from the frontend UI.
 
+---
+
+## Technologies Used
+
+- **Frontend**: Angular, Angular Material
+- **Backend**: Node.js (Express), MySQL
+- **Cloud Hosting**: ZOHO Catalyst (Appsail), Clever Cloud
+- **AI Retrieval**: GROUNDX
+- **Database**: MySQL with two tables:
+  - `Suppliers`: Name, contact details
+  - `Inventory`: Name, category, linked supplier ID
+
+---
+
+
+---
+
+##  How to Run the Angular App
+
+```bash
+# Step 1: Navigate to the project
+cd Inventory-Management-System
+
+# Step 2: Install dependencies
+npm install
+
+# Step 3: Start the development server
+ng serve
 

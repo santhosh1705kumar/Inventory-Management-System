@@ -5,7 +5,7 @@ We build an advanced inventory and supplier management platform powered by **Ang
 ## Live API Base URL
 
 we deployed the backend in cloud using clever cloud MySQL and Zoho's Catalyst hosting ,It can be fetched using  
-`https://appsail-50025767379.development.catalystappsail.in/api/ `
+`https://appsail-50025767379.development.catalystappsail.in/api/ ` as mentioned in `environment.ts` file
 
 > You **do not need to run the backend locally** — it's already deployed and ready to use.
 

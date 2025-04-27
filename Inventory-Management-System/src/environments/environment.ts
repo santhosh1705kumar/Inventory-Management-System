@@ -1,4 +1,4 @@
 export const environment = {
   production: false,
-  apiUrl: 'https://appsail-50025767379.development.catalystappsail.in/api'
+  apiUrl: 'https://appsail-50026192104.development.catalystappsail.in/api'
 };

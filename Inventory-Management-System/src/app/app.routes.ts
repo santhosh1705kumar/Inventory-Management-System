@@ -32,5 +32,11 @@ export const routes: Routes = [
     loadComponent: () => import('./supplier/supplier-form/supplier-form.component')
       .then(c => c.SupplierFormComponent)
   },
+  { 
+    path: 'chat',
+    loadComponent: () => import('./chat/chat.component')
+      .then(c => c.ChatComponent)
+  },
+
   { path: '**', redirectTo: '/inventory' }
 ];

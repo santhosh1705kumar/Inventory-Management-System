@@ -42,6 +42,10 @@ import { MatListModule } from '@angular/material/list';
               <mat-icon matListItemIcon>business</mat-icon>
               <span matListItemTitle>Suppliers</span>
             </a>
+            <a mat-list-item routerLink="/chat" routerLinkActive="active-link" (click)="sidenav.close()">
+              <mat-icon matListItemIcon>business</mat-icon>
+              <span matListItemTitle>Chat with AI</span>
+            </a>
           </mat-nav-list>
         </mat-sidenav>
 
